@@ -1,0 +1,47 @@
+@media (max-width: 968px) {
+  .nav-links {
+    display: none;
+  }
+
+  .menu-links.open {
+    display: flex !important;
+  }
+
+  .hamburger-menu {
+    display: block;
+  }
+}
+/* Hide hamburger nav on desktop */
+#hamburger-nav {
+  display: none;
+}
+
+/* Show hamburger nav only on smaller screens */
+@media (max-width: 968px) {
+  #desktop-nav {
+    display: none;
+  }
+
+  #hamburger-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  }
+
+  .hamburger-menu .menu-links {
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .hamburger-menu.open .menu-links {
+    display: flex;
+  }
+
+  .hamburger-icon {
+    display: block;
+    cursor: pointer;
+  }
+}
